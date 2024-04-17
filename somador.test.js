@@ -9,22 +9,17 @@ test('Soma de "10" e 10 lança erro porque "10" deveria ser numero', () => {
     expect(() => somador.somarNumerosNaturais("10",10)).toThrow("Variaveis devem ser numeros");
 });
 
-//Exceção 2: num1 ou num2 não são números
-test('Soma de "10" e 10 lança erro porque "10" deveria ser numero', () => {
-    expect(() => somador.somarNumerosNaturais("10",10)).toThrow("Variaveis devem ser numeros");
-});
-
-//num1 ou num2 não são inteiros
+//Exceção 2: num1 ou num2 não são inteiros
 test('Soma de 0.5 e 10 lança erro porque 0.5 deveria ser inteiro', () => {
     expect(() => somador.somarNumerosNaturais(0.5,10)).toThrow("Variaveis devem ser naturais - não é inteiro");
 });
 
-//num1 ou num2 não são inteiros
+//Exceção 3: num1 ou num2 não são inteiros
 test('Soma de -0.5 e 10 lança erro porque -0.5 deveria ser inteiro', () => {
     expect(() => somador.somarNumerosNaturais(-0.5,10)).toThrow("Variaveis devem ser naturais - não é inteiro");
 });
 
-//num1 ou num2 não são naturais (positivos)
+//Exceção 4: num1 ou num2 não são naturais (positivos)
 test('Soma de -5 e 10 lança erro porque -5 deveria ser positivo', () => {
     expect(() => somador.somarNumerosNaturais(-5,10)).toThrow("Variaveis devem ser naturais - positivos");
 });
